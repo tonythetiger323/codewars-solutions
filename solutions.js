@@ -25,3 +25,26 @@ const isTriangle = (a, b, c) => {
     return false;
   }
 };
+
+// Descending Order
+// Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+const descendingOrder = (n) => {
+  // Convert n to a string and split into an array then map array to convert string back to a number
+  const numArr = String(n)
+    .split('')
+    .map((str) => Number(str));
+  return Number(
+    numArr
+      .sort((a, b) => b - a)
+      .map((num) => String(num))
+      .join('')
+  );
+  // Sort numArr into descending order
+  //   const descArr = numArr.sort((a, b) => b - a);
+  // map descArr convert each number to a string
+  //   const sortStrArr = descArr.map(num => String(num));
+  // join array into a string
+  //   const sortStr = sortStrArr.join('');
+  // convert sortStr to a number and return it
+  //   return Number(sortStr);
+};
