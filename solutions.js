@@ -48,3 +48,12 @@ const descendingOrder = (n) => {
   // convert sortStr to a number and return it
   //   return Number(sortStr);
 };
+
+// Find the smallest integer in the array
+// Given an array of integers your solution should find the smallest integer.
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    const sortedArgs = args.sort((a, b) => a - b);
+    return sortedArgs[0];
+  }
+}
