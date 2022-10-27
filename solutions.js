@@ -65,3 +65,17 @@ const opposite = (number) => number * -1;
 // Convert boolean values to strings 'Yes' or 'No'.
 // Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
 const boolToWord = (bool) => (bool ? 'Yes' : 'No');
+
+// Sum Arrays
+/* Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+ */
+const sum = (numbers) => {
+  'use strict';
+  let total = 0;
+  if (!numbers.length) {
+    return 0;
+  } else {
+    numbers.forEach((number) => (total += number));
+  }
+  return total;
+};
