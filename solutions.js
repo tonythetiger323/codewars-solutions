@@ -79,3 +79,13 @@ const sum = (numbers) => {
   }
   return total;
 };
+
+// Convert a boolean to a string
+// Implement a function which convert the given boolean value into its string representation.
+const booleanToString = (b) => (b === true ? 'true' : 'false');
+
+// Returning Strings
+// Make a function that will return a greeting statement that uses an input; your program should return, "Hello, <name> how are you doing today?".
+const greet2 = (name) => {
+  return `Hello, ${name} how are you doing today?`;
+};
